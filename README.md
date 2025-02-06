@@ -20,25 +20,10 @@ API: YouTube Data API
 
 
 📂 Project Structure
-css
 
-VisionFlow/
-├── src/
-│   ├── components/
-│   │   ├── Dashboard.ts
-│   │   ├── Header.ts
-│   │   ├── MoodSelector.ts
-│   │   ├── UserProfile.ts
-│   │   ├── DarkModeToggle.ts
-│   │   └── VideoPlayer.ts
-│   ├── services/
-│   │   └── YouTubeAPI.ts
-│   ├── styles/
-│   │   └── styles.css
-│   └── main.ts
-├── index.html
-├── package.json
-└── vite.config.ts
+
+
+![Screenshot 2025-02-06 164158](https://github.com/user-attachments/assets/6beaa384-db1b-4216-a5f1-a99546a4b48a)
 
 
 
