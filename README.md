@@ -21,8 +21,7 @@ API: YouTube Data API
 
 📂 Project Structure
 css
-Copiază
-Editează
+
 VisionFlow/
 ├── src/
 │   ├── components/
@@ -47,27 +46,20 @@ VisionFlow/
 Clone the repository:
 
 bash
-Copiază
-Editează
 git clone https://github.com/your-username/VisionFlow.git
 cd VisionFlow
 Install dependencies:
 
 bash
-Copiază
-Editează
 npm install
 Run the application:
 
 bash
-Copiază
-Editează
 npm run dev
 Build for production:
 
 bash
-Copiază
-Editează
+
 npm run build
 🔑 API Configuration
 Obtain a YouTube Data API key from Google Developers Console.
