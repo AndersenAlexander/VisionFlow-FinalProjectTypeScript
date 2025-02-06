@@ -1,4 +1,5 @@
 # VisionFlow-FinalProjectTypeScript
+
 🚀 VisionFlow 🎥
 VisionFlow is a dynamic web application designed to provide personalized YouTube video recommendations based on the user's mood. Built using TypeScript, Vite, HTML, and CSS, the app integrates seamlessly with the YouTube API to deliver curated content for relaxation, motivation, focus, and more. 🌟
 
@@ -9,10 +10,15 @@ VisionFlow is a dynamic web application designed to provide personalized YouTube
 🎙️ Voice Command Integration: Search for videos or change moods using voice commands for hands-free navigation.
 👤 User Profiles: Customize your profile with an avatar and track your video preferences.
 🌗 Dark Mode Toggle: Switch between light and dark themes effortlessly.
+
+
 🛠️ Tech Stack
 Frontend: TypeScript, HTML, CSS
 Build Tool: Vite
 API: YouTube Data API
+
+
+
 📂 Project Structure
 css
 Copiază
@@ -34,6 +40,9 @@ VisionFlow/
 ├── index.html
 ├── package.json
 └── vite.config.ts
+
+
+
 🚀 Getting Started
 Clone the repository:
 
