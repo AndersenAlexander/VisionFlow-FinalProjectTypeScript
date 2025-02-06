@@ -20,35 +20,30 @@ API: YouTube Data API
 
 
 📂 Project Structure
-
-
-
 ![Screenshot 2025-02-06 164158](https://github.com/user-attachments/assets/6beaa384-db1b-4216-a5f1-a99546a4b48a)
 
 
 
 🚀 Getting Started
-Clone the repository:
 
-bash
+1. Clone the repository:
 git clone https://github.com/your-username/VisionFlow.git
 cd VisionFlow
-Install dependencies:
 
-bash
+2. Install dependencies:
 npm install
-Run the application:
 
-bash
+3. Run the application:
 npm run dev
-Build for production:
 
-bash
-
+4. Build for production:
 npm run build
+
 🔑 API Configuration
 Obtain a YouTube Data API key from Google Developers Console.
 Replace 'YOUR_YOUTUBE_API_KEY' in YouTubeAPI.ts with your API key.
+
+
 🤝 Contributing
 Contributions are welcome! Please fork the repository and submit a pull request with your improvements.
 
