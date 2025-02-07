@@ -55,3 +55,60 @@ Contributions are welcome! Please fork the repository and submit a pull request 
 
 📄 License
 This project is licensed under the MIT License.
+
+🛠️ How we organized this project
+1. Project Background and Vision
+I initiated and managed the development of a web application called VisionFlow, which offers users the ability to search for videos on YouTube, select music based on their mood, and benefit from voice recognition functionalities. The main goal was to build an intuitive and modern platform, with a focus on user experience and the integration of an external API (YouTube Data API).
+As Team Lead, I supervised a group of 12 members including myself. The basic tasks were divided in a way that capitalized on the strengths of each specialist:
+1. Front-end Development: 5 people, including UI/UX design and interaction implementation (HTML, CSS, TypeScript).
+2. Back-end Integration / API: 2 people, responsible for the communication module with YouTube Data API, creating paging functions and managing the token for subsequent requests.
+3. Testing and QA: 2 people, responsibilities for automated/manual testing, code quality analysis, bug reporting.
+4. Documentation and DevOps: 1 person, who managed the project documentation, configured the build/deployment environments and ensured version consistency.
+________________________________________
+2. Coordination Role
+2.1. Planning and Delegation
+• Requirements Identification: We established, together with the team, the application specifications: YouTube search module, automatic playlist, “mood” selector, avatar upload, voice recognition, etc.
+• Task Creation: We divided the tasks into tickets managed within a project management system (e.g. Jira, Trello). Each member was assigned tasks based on their competence.
+• Deadline Setting: We estimated the time required for each module (e.g.: 1 week for integration with YouTube API, 1 week for testing, etc.) and monitored progress.
+2.2. Review and Feedback
+• Code Reviews: Before merging a branch into the main branch, I organized code review sessions. I checked if the code conventions, TypeScript standards were followed and if the logic met the initial requirements.
+• Design/UI Feedback: I provided guidance to the front-end team on the design side, to maintain consistency of colors, sizes, layouts (e.g. red buttons, centered text, uniform input, etc.).
+• Intermediate Testing: After completing a module, QA executed the planned tests and I centralized the bug reports, and I redirected the bug resolution to the responsible members.
+2.3. Resource Coordination
+• Technical Mentoring: I organized short training sessions and "knowledge-sharing" to ensure that all team members know how to use YouTube Data API, localStorage or voice recognition.
+• Team Synchronization: During daily stand-up meetings, we discussed technical bottlenecks and each person’s progress, allocating additional resources if needed.
+• Final Integration: Towards the end, we consolidated all components (Dashboard, MoodSelector, DarkMode, UserProfile) and validated the end-to-end functionality.
+________________________________________
+3. Technical Results and Contributions
+1. Dashboard.ts Module
+o Main author: 3 front-end members.
+o Contributions: Implementation of the main interface, dynamic HTML loading, button events, text fields, voice command, page navigation logic.
+2. YouTubeAPI.ts Module
+o Main author: 1 back-end specialist + 1 testing helper.
+o Contributions: searchVideos function for YouTube Data API call, nextPageToken handling for pagination, autoPlayPlaylist(query) for dynamic playlist generation.
+3. Mood Selector and Dark Mode
+o Lead authors: 1 front-end member + 1 QA (for intensive cross-browser compatibility testing).
+o Contributions: Creating a mood dropdown, loading the associated query, saving the state in localStorage, light/dark mode with .dark-mode.
+4. Design & CSS
+o Lead authors: 2 front-end designers.
+o Contributions: Finalizing the layout (header, profile container, buttons), color palette (red #ff0000, background #f4f4f4), hover states, responsive design for various resolutions.
+5. Testing & QA
+o Lead authors: 2 QA members.
+o Contributions: Integrated testing sessions, discovering avatar loading errors, testing speech recognition in various browsers (Chrome, Edge), testing pagination on various searches.
+6. DevOps and Documentation
+o Main author: 1 dedicated person.
+o Contributions: Build and deploy environment setup, version management, final documentation of YouTubeAPI module, endpoints and localStorage config.
+________________________________________
+4. Key Aspects in Team Management
+• Transparency in communication: each member clearly understood their responsibilities and delivery deadlines.
+• Collaboration: we encouraged peer-review, pairing programming between front-end and back-end, to ensure that the API requirements and input/output data were understood.
+• Feedback-Based Adaptation: during the project, the requirements were adjusted (for example, the pagination mode with nextPageToken instead of a numeric offset). The team reacted quickly to these types of changes.
+• Motivation and Support: we provided public recognition to members who completed their tasks on time and assisted with additional resources those who were experiencing difficulties.
+________________________________________
+5. Conclusions
+Through the coordinated effort of the 12 team members, we delivered a functional web application that:
+• Consumes data from an external service (YouTube Data API).
+• Provides flexibility in search (manual, voice, by state/mood).
+• Personalizes the experience by saving username and avatar.
+• Improves UX with incremental loading (“Load More”) and a dark mode (Dark Mode).
+In my role as coordinator, I managed the process of defining requirements, dividing tasks and ensuring team cohesion. The result is a modern prototype, which can be expanded and adapted later. The experience highlighted the importance of planning, feedback and agility in delivering a product on time that meets the set objectives and is enjoyable to use.
