@@ -173,3 +173,8 @@ button:hover {
   font-size: 25px;
   color: ghostwhite;
 }
+
+.hero ul{
+  list-style: none;
+  display: flex;
+}

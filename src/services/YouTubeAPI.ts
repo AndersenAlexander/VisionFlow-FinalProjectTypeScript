@@ -1,5 +1,5 @@
 // Replace with your actual YouTube Data API key.
-const API_KEY = "AIzaSyDZMe2M_PZz_t83VqYGNaQJAuuA-RzCMRY";
+const API_KEY = "";
 const BASE_URL = "https://www.googleapis.com/youtube/v3/search";
 
 // Global variable for pagination token. If it's empty (""), we are at the first page.
