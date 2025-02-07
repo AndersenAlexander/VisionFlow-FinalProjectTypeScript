@@ -1,3 +1,4 @@
+/* Base styling for the page */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -6,6 +7,7 @@ body {
   text-align: center;
 }
 
+/* Red header */
 header {
   background-color: #ff0000;
   color: white;
@@ -14,6 +16,7 @@ header {
   font-size: 1.5rem;
 }
 
+/* Navigation menu inside the header */
 nav ul {
   list-style: none;
   padding: 0;
@@ -27,30 +30,36 @@ nav a {
   text-decoration: none;
 }
 
+/* Main content area */
 main {
   padding: 1rem;
 }
 
+/* Each video div under #video-section */
 #video-section div {
   margin-bottom: 1rem;
 }
 
+/* Video container styling for iframes */
 .video-container iframe {
   width: 100%;
   height: 300px;
 }
 
+/* (Optional) keep a specific margin/padding for moodSelector label & select if desired */
 #moodSelector {
   margin-bottom: 1rem;
   padding: 0.5rem;
   font-size: 1rem;
 }
 
+/* Dark mode toggle class */
 .dark-mode {
   background-color: #121212;
   color: white;
 }
 
+/* Profile section styling */
 #user-profile {
   padding: 1rem;
   background-color: #e0e0e0;
@@ -59,14 +68,36 @@ main {
   width: 80%;
 }
 
-#usernameInput {
-  margin-right: 0.5rem;
-  padding: 0.5rem;
+/* Universal styling for text/file inputs and select elements */
+input[type="text"],
+input[type="file"],
+select {
+  display: inline-block;
+  width: 250px; /* Consistent width across all input fields */
   font-size: 1rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff; /* White background for contrast */
+  color: #333; /* Text color */
 }
 
-button,
-input {
+/* Style for all buttons */
+button {
   display: inline-block;
+  background-color: #ff0000; /* Match the header red */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
   margin: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+/* Button hover state */
+button:hover {
+  background-color: #cc0000; /* Slightly darker red when hovered */
 }
