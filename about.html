@@ -7,60 +7,123 @@
     <link rel="stylesheet" href="./src/styles/styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
-  <body>
-    <div id="about"></div>
-    <header id="about_header">
-        <h1>About</h1>
-        <nav>
-            <ul class="nav_links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
+  <body id="about-page">
+    <!-- Adăugat ID pentru a izola stilurile -->
+    <!-- Header fix (roșu) -->
+    <header>
+      <h1>VisionFlow Dashboard</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-    
-    <!--  VIDEO Section   -->
-    <div class="hero">    
-        <video autoplay loop muted plays-inline class="bkg_video">
-            <source src="src/media/bkg_video.mp4" type="video/mp4">
-        </video>
 
-        <p>
-            VisionFlow is a dynamic web application that transforms your YouTube viewing experience by offering personalized video recommendations <br> based on your current mood. <br>
-            Whether you’re looking to feel uplifted, relaxed, or motivated, simply select your mood and let VisionFlow curate a list of videos <br> tailored to enhance your emotional state. <br>
-            In addition to mood-based recommendations, VisionFlow enables you to personalize your experience. <br>
-            You can easily add your name and choose a profile picture, making the platform uniquely yours. <br>
-            With its modern and intuitive interface, VisionFlow not only simplifies content discovery but also ensures a more engaging and <br> enjoyable experience every time you are on the platform. <br>
-            Designed with user convenience in mind, VisionFlow is your gateway to a more customized digital media experience—bringing the <br> right content to you at the right time while allowing you to connect with your favorite videos in a way that truly resonates with your mood. <br>
-        </p>
-
-        <section class="cards">
-            <h2>Contributors</h2>
-            <ul class="Parteners">
-                <li>
-                    <img src="src/media/team/razvan_paraschiva.jpg" width="300" height="300" alt="Member Razvan Paraschiva">
-                    <p>
-                        <strong>Razvan Paraschiva</strong> is a 27-year-old a Machine Learning Engineer with 7 years of experience in space engineering. 
-                        He is passionate about teaching and helping students applying AI concepts to real-world challenges, especially in space exploration. 
-                        His focus is on hands-on learning, ensuring students gain practical skills and confidence in AI.
-                    </p>
-                </li>
-
-                <li>
-                    <img src="src/media/team/alexander_andersen.jpg" width="300" height="300" alt="Instructor Varga Gina">
-                    <p>
-                        <strong>Alexander Andersen</strong> is an online entrepreneur who has created 30+ top-rated educational e-courses to the world on new technology topics such as Artificial Intelligence, 
-                        Machine Learning, Deep Learning. He is passionate about bringing this knowledge to the world and help as much people as possible. 
-                        So far more than 2 million students have subscribed to his courses.
-                    </p>
-                </li>
-            </ul>
-        </section>
+    <!-- HERO section cu video de fundal -->
+    <div class="hero">
+      <video autoplay loop muted playsinline class="bkg_video">
+        <source src="src/media/bkg_video.mp4" type="video/mp4" />
+      </video>
     </div>
-    
 
+    <!-- Spațiu de 50px după header -->
+    <div class="spacer"></div>
+
+    <!-- Secțiunea de prezentare (overlay peste video) -->
+    <section class="overlay-banner">
+      <h2>ABOUT THE PROJECT</h2>
+      <p>
+        VisionFlow is a platform designed to provide a unique experience of
+        managing media content, personalized recommendations and voice
+        interactions. In addition, it integrates mood-based music searches, so
+        that the user can quickly find playlists according to his mood.
+      </p>
+    </section>
+
+    <!-- Spațiu de 50px între secțiuni -->
+    <div class="spacer"></div>
+
+    <!-- Conținut scrollabil (ex: Membrii echipei) -->
+    <main>
+      <section class="team-section">
+        <h2>Our team</h2>
+        <div class="team-container">
+          <div class="team-member">
+            <img
+              src="src/media/Alexander Andersen.png"
+              alt="Alexander Andersen"
+            />
+            <h2>Team leader</h2>
+            <h3>Alexander Andersen</h3>
+            <p>Developer Front-End and Back-End</p>
+          </div>
+          <div class="team-member">
+            <img
+              src="src/media/Razvan Paraschiva.jpg"
+              alt="Razvan Paraschiva"
+            />
+            <h3>Razvan Paraschiva</h3>
+            <p>Developer Back-End</p>
+          </div>
+          <div class="team-member">
+            <img src="src/media/Varga Gina.jpeg" alt="Varga Gina" />
+            <h3>Varga Gina</h3>
+            <p>Developer Back-End</p>
+          </div>
+          <div class="team-member">
+            <img src="src/media/Alin Mihalache.jpg" alt="Alin Mihalache" />
+            <h3>Alin Mihalache</h3>
+            <p>Developer Back-End</p>
+          </div>
+          <div class="team-member">
+            <img src="src/media/Irina Badea.jpg" alt="Irina Badea" />
+            <h3>Irina Badea</h3>
+            <p>Developer Back-End</p>
+          </div>
+          <div class="team-member">
+            <img
+              src="src/media/Dumitrescu Vasile.jpg"
+              alt="Dumitrescu Vasile"
+            />
+            <h3>Dumitrescu Vasile</h3>
+            <p>Developer Back-End</p>
+          </div>
+          <div class="team-member">
+            <img src="src/media/Laura Popa.jpg" alt="Laura Popa" />
+            <h3>Laura Popa</h3>
+            <p>Developer Back-End</p>
+          </div>
+          <div class="team-member">
+            <img src="src/media/Emanuel Niculai.jpg" alt="Emanuel Niculai" />
+            <h3>Emanuel Niculai</h3>
+            <p>Developer Back-End</p>
+          </div>
+          <div class="team-member">
+            <img src="src/media/Mihaela Ristache.jpg" alt="Mihaela Ristache" />
+            <h3>Mihaela Ristache</h3>
+            <p>Developer Back-End</p>
+          </div>
+          <div class="team-member">
+            <img src="src/media/Marian Suciu.jpg" alt="Marian Suciu" />
+            <h3>Marian Suciu</h3>
+            <p>Developer Back-End</p>
+          </div>
+          <div class="team-member">
+            <img src="src/media/Mihaita Miriam.jpg" alt="DMihaita Miriam" />
+            <h3>Mihaita Miriam</h3>
+            <p>Developer Back-End</p>
+          </div>
+          <div class="team-member">
+            <img src="src/media/Munteanu Bogdan.jpg" alt="Munteanu Bogdan" />
+            <h3>Munteanu Bogdan</h3>
+            <p>Developer Back-End</p>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
-
