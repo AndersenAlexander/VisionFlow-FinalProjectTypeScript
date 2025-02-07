@@ -69,7 +69,7 @@ ________________________________________
 2.1. Planning and Delegation
 • Requirements Identification: We established, together with the team, the application specifications: YouTube search module, automatic playlist, “mood” selector, avatar upload, voice recognition, etc.
 • Task Creation: We divided the tasks into tickets managed within a project management system (e.g. Jira, Trello). Each member was assigned tasks based on their competence.
-• Deadline Setting: We estimated the time required for each module (e.g.: 1 week for integration with YouTube API, 1 week for testing, etc.) and monitored progress.
+• Deadline Setting: We estimated the time required for each module (e.g.: 3 days for integration with YouTube API, 3 days for testing, etc.) and monitored progress.
 2.2. Review and Feedback
 • Code Reviews: Before merging a branch into the main branch, I organized code review sessions. I checked if the code conventions, TypeScript standards were followed and if the logic met the initial requirements.
 • Design/UI Feedback: I provided guidance to the front-end team on the design side, to maintain consistency of colors, sizes, layouts (e.g. red buttons, centered text, uniform input, etc.).
