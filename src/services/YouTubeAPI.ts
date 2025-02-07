@@ -1,5 +1,5 @@
 // Replace with your actual YouTube Data API key.
-const API_KEY = "";
+const API_KEY = "AIzaSyDZMe2M_PZz_t83VqYGNaQJAuuA-RzCMRY";
 const BASE_URL = "https://www.googleapis.com/youtube/v3/search";
 
 // Global variable for pagination token. If it's empty (""), we are at the first page.
@@ -22,7 +22,7 @@ export function searchVideos(query: string, append = false) {
 
   // Construct the request URL to query YouTube Data API.
   // We add &pageToken={nextPageToken} only if nextPageToken is non‐empty.
-  let requestUrl = `${BASE_URL}?part=snippet&type=video&maxResults=10&q=${encodeURIComponent(
+  let requestUrl = `${BASE_URL}?part=snippet&type=video&maxResults=5&q=${encodeURIComponent(
     query
   )}&key=${API_KEY}`;
 
