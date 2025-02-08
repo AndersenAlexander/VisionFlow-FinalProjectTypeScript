@@ -108,6 +108,31 @@ button:hover {
     width: 200px;
   }
 }
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+.dark-mode body {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode header {
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+.dark-mode button {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode input,
+.dark-mode select {
+  background-color: #333;
+  color: white;
+  border: 1px solid #555;
+}
 
 
 /* -------------------------------------------------- ABOUT SECTION --------------------------------------------------- */
