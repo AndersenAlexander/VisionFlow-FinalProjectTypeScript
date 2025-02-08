@@ -49,7 +49,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #5bbff9;
+  color: #050505;
 }
 
 /* ---- Main Content ---- */
@@ -108,6 +108,7 @@ button:hover {
     width: 200px;
   }
 }
+
 .dark-mode {
   background-color: #121212;
   color: white;
@@ -134,7 +135,6 @@ button:hover {
   border: 1px solid #555;
 }
 
-
 /* -------------------------------------------------- ABOUT SECTION --------------------------------------------------- */
 
 /* ---- Base Styling for the About Page ---- */
@@ -146,7 +146,7 @@ body.about-page {
   text-align: center;
 }
 
-/* ---- Header Specific pentru About ---- */
+/* ---- Header for About ---- */
 header.about-header {
   background-color: #ff0000;
   color: white;
@@ -159,9 +159,9 @@ header.about-header {
   left: 0;
   z-index: 1000;
   display: flex;
-  justify-content: center; /* Centrează titlul și meniul */
+  justify-content: center;
   align-items: center;
-  flex-direction: column; /* Aranjează elementele pe verticală */
+  flex-direction: column;
 }
 
 nav.about-nav ul {
@@ -182,6 +182,7 @@ nav.about-nav a {
 nav.about-nav a:hover,
 nav.about-nav a.active {
   text-decoration: underline;
+  color: rgb(0, 0, 0);
 }
 
 /* ---- Background Video ---- */
@@ -207,7 +208,7 @@ main.about-content {
   position: relative;
   z-index: 2;
   padding: 1rem;
-  margin-top: 200px; /* Ajustează spațiul pentru noul header */
+  margin-top: 200px;
 }
 
 /* ---- Spacer ---- */
@@ -215,13 +216,13 @@ main.about-content {
   height: 50px;
 }
 
-/* ---- Despre Proiect ---- */
+/* ---- DAbout project ---- */
 .overlay-banner {
   padding: 2rem 1rem;
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 8px;
   max-width: 700px;
-  margin: 100px auto 0; /* Spațiu între header și conținut */
+  margin: 100px auto 0;
   backdrop-filter: blur(5px);
   color: white;
 }
@@ -241,7 +242,7 @@ main.about-content {
   border-radius: 8px;
 }
 
-/* ---- Echipa Noastră ---- */
+/* ---- Our team ---- */
 .team-section {
   padding: 1rem;
   background-color: rgba(255, 255, 255, 0.1);
