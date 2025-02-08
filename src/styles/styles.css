@@ -8,8 +8,9 @@ body {
 }
 
 /* Red header */
-#about_header{
-  position: sticky; top: 0%;
+#about_header {
+  position: sticky;
+  top: 0%;
   display: flex;
   background-color: rgba(255, 0, 0, 0.3);
   color: #edf0f1;
@@ -18,8 +19,9 @@ body {
   justify-content: space-between;
 }
 
-header{
-  position: sticky; top: 0%;
+header {
+  position: sticky;
+  top: 0%;
   display: flex;
   background-color: rgba(255, 0, 0);
   color: #edf0f1;
@@ -28,25 +30,26 @@ header{
   justify-content: space-between;
 }
 
-.nav_links{
+.nav_links {
   list-style: none;
 }
 
-.nav_links li{
+.nav_links li {
   display: inline-block;
   padding: 0px 20px;
 }
 
-.nav_links li a{
+.nav_links li a {
   transition: all 0.3s ease 0s;
 }
 
-.nav_links li a:hover{
+.nav_links li a:hover {
   color: #5bbff9;
 }
 
 /* Navigation menu inside the header */
-nav ul, a {
+nav ul,
+a {
   font-size: 20px;
   color: #edf0f1;
   text-decoration: none;
@@ -126,55 +129,175 @@ button:hover {
   background-color: #cc0000; /* Slightly darker red when hovered */
 }
 
-
-
-
-
 /* -------------------------------------------------- ABOUT SECTION --------------------------------------------------- */
 
+/* ---- Base Styling for the About Page ---- */
+body.about-page {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000; /* Fundal de rezervă */
+  color: #fff;
+  text-align: center;
+}
 
-.hero{
+/* ---- Header Specific pentru About ---- */
+header.about-header {
+  background-color: #ff0000;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center; /* Centrează titlul și meniul */
+  align-items: center;
+  flex-direction: column; /* Aranjează elementele pe verticală */
+}
+
+nav.about-nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0.5rem 0;
+}
+
+nav.about-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav.about-nav a:hover,
+nav.about-nav a.active {
+  text-decoration: underline;
+}
+
+/* ---- Background Video ---- */
+.hero {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100vh;
-  /* background-image: linear-gradient(rgba(12,3,51,0.3), rgba(12,3,51,0.3));    */
-  position: relative;
-  display: table;
-  align-items: center;
-  justify-self: center;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.bkg_video{
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  overflow: hidden;
   z-index: -1;
+}
+
+.bkg_video {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  /* opacity: 0.8; */
+  opacity: 0.9;
 }
 
-@media (min-aspect-ratio: 16/9){
-  .bkg_video{
-    width: 100%;
-    height: auto;
-  }
+/* ---- Content Over Video ---- */
+main.about-content {
+  position: relative;
+  z-index: 2;
+  padding: 1rem;
+  margin-top: 200px; /* Ajustează spațiul pentru noul header */
 }
 
-@media (max-aspect-ratio: 16/9){
-  .bkg_video{
-    width: auto;
-    height: 100%;
-  }
+/* ---- Spacer ---- */
+.spacer {
+  height: 50px;
 }
 
-.hero p{
-  font-size: 25px;
-  color: ghostwhite;
+/* ---- Despre Proiect ---- */
+.overlay-banner {
+  padding: 2rem 1rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  max-width: 700px;
+  margin: 100px auto 0; /* Spațiu între header și conținut */
+  backdrop-filter: blur(5px);
+  color: white;
 }
 
-.hero ul{
-  list-style: none;
+.overlay-banner h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.overlay-banner p {
+  line-height: 1.6;
+  font-size: 1rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+/* ---- Echipa Noastră ---- */
+.team-section {
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 0 auto;
+  backdrop-filter: blur(5px);
+}
+
+.team-section h2 {
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+/* ---- Team Member Cards ---- */
+.team-container {
   display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.team-member {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  max-width: 300px;
+  width: 90%;
+  transition: transform 0.3s ease;
+  text-align: center;
+  backdrop-filter: blur(3px);
+  color: black;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+/* ---- Member Images ---- */
+.team-member img {
+  width: 250px;
+  height: 350 px;
+  object-fit: cover;
+  border-radius: 2%;
+  margin-bottom: 1rem;
+  border: 3px solid #ff0000;
+}
+
+/* ---- Responsive Design ---- */
+@media (max-width: 768px) {
+  .team-member {
+    max-width: 90%;
+  }
+
+  .overlay-banner h2,
+  .team-section h2 {
+    font-size: 1.5rem;
+  }
+
+  nav.about-nav {
+    font-size: 0.9rem;
+  }
 }
