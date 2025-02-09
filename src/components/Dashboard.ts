@@ -44,8 +44,7 @@ export function createApp() {
 
     // Când dăm click pe Search:
     document.getElementById("searchBtn")?.addEventListener("click", () => {
-      const query = (document.getElementById("search") as HTMLInputElement)
-        .value;
+      const query = (document.getElementById("search") as HTMLInputElement).value;
       currentPage = 1;
       searchVideos(query, false);
     });
