@@ -61,7 +61,7 @@ export function searchVideos(query: string, append = false) {
       if (data.nextPageToken) {
         nextPageToken = data.nextPageToken;
         const loadMoreBtn = document.getElementById("loadMoreBtn");
-        if (loadMoreBtn) loadMoreBtn.style.display = "block";
+        if (loadMoreBtn) loadMoreBtn.style.display = "inline-flex";
       } else {
         nextPageToken = "";
         const loadMoreBtn = document.getElementById("loadMoreBtn");
